@@ -1,19 +1,15 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 120    // default: 10
-
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
-
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
 
 #include <input/processors.dtsi>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 4 10000>;
-};
+&mkp_input_listener { input-processors = <&zip_temp_layer 4 10000>; };
 
 &mt {
     flavor = "balanced";
@@ -27,6 +23,11 @@
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
+        };
+
+        chk_keynum {
+            bindings = <&kp A>;
+            key-positions = <22 35 36>;
         };
     };
 
