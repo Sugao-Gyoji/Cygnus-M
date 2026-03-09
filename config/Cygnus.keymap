@@ -77,7 +77,7 @@
         SYMBOLS {
             bindings = <
 &trans  &kp EXCL   &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                                        &kp SLASH         &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RPAR           &kp EQUAL      &trans
-&trans  &trans     &trans         &trans        &trans                &trans                 &trans       &kp BACKSLASH  &kp MINUS         &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp SEMICOLON  &trans
+&trans  &trans     &trans         &trans        &kp LC(DELETE)        &kp LC(INSERT)         &trans       &kp BACKSLASH  &kp MINUS         &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp SEMICOLON  &trans
 &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp PIPE       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp COLON      &trans
 &trans  &trans     &trans         &trans        &trans                &trans                 &trans       &trans         &trans                                                                        &kp TILDE      &trans
             >;
