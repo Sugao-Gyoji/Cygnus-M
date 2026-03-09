@@ -16,6 +16,7 @@
             ;
 };
 
+/*
 &zip_temp_layer {
     excluded-positions = <
         20 // MB3
@@ -34,6 +35,7 @@
         input-processors = <&zip_temp_layer 4 10000>;
     };
 };
+*/
 
 &pinctrl {
     spi0_default: spi0_default {
