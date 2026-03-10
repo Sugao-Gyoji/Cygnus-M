@@ -31,6 +31,21 @@
         };
     };
 
+/ {
+    macros {
+        shift_rclk: shift_rclk {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &mkp MB2>
+                , <&macro_release &kp LSHFT>;
+        };
+    };
+};
+
     macros {
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
