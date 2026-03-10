@@ -16,7 +16,7 @@
             ;
 };
 
-/*
+/*　*/
 &zip_temp_layer {
     excluded-positions = <
         20 // MB3
@@ -27,14 +27,14 @@
     >;
 };
 
-*/
+/* */
 
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 0 250>;
+        input-processors = <&zip_temp_layer 4 10000>;
     };
 };
 
