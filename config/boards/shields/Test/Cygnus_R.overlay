@@ -25,6 +25,8 @@
         35 // MB4
         36 // MB5
     >;
+
+    require-prior-idle-ms = <200>;
 };
 
 /* */
