@@ -90,10 +90,10 @@
 
         SYMBOLS {
             bindings = <
-&kp LA(NUMBER_1)  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR            &kp PERCENT                                        &kp SLASH         &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RPAR           &kp EQUAL      &trans
-&kp LA(NUMBER_2)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &trans        &kp LC(DELETE)        &kp LC(INSERT)         &trans       &kp BACKSLASH  &kp MINUS         &kp PLUS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp SEMICOLON  &trans
-&kp LA(NUMBER_3)  &kp CARET         &kp AMPERSAND     &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE    &kp PIPE       &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp COLON      &trans
-&kp LA(NUMBER_4)  &trans            &trans            &trans        &trans                &trans                 &trans       &trans         &trans                                                                        &kp TILDE      &trans
+&kp LA(NUMBER_1)  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR    &kp PERCENT                                &kp CARET         &kp AMPERSAND      &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
+&kp LA(NUMBER_2)  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans       &kp LC(INSERT)  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9          &kp NUMBER_0           &kp SEMI
+&kp LA(NUMBER_3)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &trans        &trans        &trans        &kp GRAVE    &kp LC(DELETE)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT
+&kp LA(NUMBER_4)  &trans            &trans            &trans        &trans        &trans        &trans       &trans          &trans                                                                       &kp TILDE              &kp APOS
             >;
         };
 
