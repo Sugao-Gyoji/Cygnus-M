@@ -81,6 +81,25 @@
 
             tapping-term-ms = <250>;
         };
+
+// ① タップとダブルタップを切り替える設定
+        td_int: tap_dance_int {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp INT5>, <&kp INT4>;
+        };
+
+        // ② 長押しでレイヤー、タップで上記のTap-Danceを呼び出す設定
+        lt_int: layer_tap_int {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <125>;
+            global-quick-tap;
+            bindings = <&mo>, <&td_int>; // 長押しでレイヤー3、タップでtd_int
+        };
     };
 
     keymap {
