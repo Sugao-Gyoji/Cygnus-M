@@ -76,7 +76,7 @@
 
             tap-ms = <20>;
         };
-
+/*
         ek: eisu_kana {
             compatible = "zmk,behavior-tap-dance";
             label = "Eisu / Kana";
@@ -108,6 +108,7 @@
 
             // 長押しでレイヤー3、タップでtd_int
         };
+*/
     };
 
     keymap {
