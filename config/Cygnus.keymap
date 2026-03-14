@@ -50,6 +50,8 @@
                 , <&macro_tap &mkp MB2>      // 3. 右クリックを叩く
                 , <&macro_release &kp LSHFT>;// 4. Shiftを離す
         };
+
+
     };
 
     behaviors {
@@ -69,6 +71,15 @@
             bindings = <&msc>, <&msc>;
 
             tap-ms = <20>;
+        };
+
+        ek: eisu_kana {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Eisu / Kana";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
+
+            tapping-term-ms = <250>;
         };
     };
 
