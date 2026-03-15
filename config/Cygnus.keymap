@@ -96,7 +96,6 @@
             bindings = <&kp INT5>, <&kp INT4>;
         };
 
-
         // ② 長押しでレイヤー、タップで上記のTap-Danceを呼び出す設定
 
         lt_int: layer_tap_int {
@@ -110,7 +109,6 @@
 
             // 長押しでレイヤー3、タップでtd_int
         };
-
     };
 
     keymap {
@@ -118,10 +116,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q     &kp W      &kp E      &kp R    &kp T                                         &kp Y      &kp U  &kp I      &kp O    &kp P        &kp AT
-&kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK         &mkp MB2       &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS    &kp RET
-&kp LSHFT         &lt 6 Z   &kp X      &kp C      &kp V    &kp B        &kp DELETE        &mkp MB1       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH    &kp RSHIFT
-&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 2 SPACE  &mt LSHFT INT4    &kp BACKSPACE  &lt 1 RET                             &shift_rclk  &kp KP_DOT
+&kp TAB           &kp Q     &kp W      &kp E      &kp R        &kp T                                         &kp Y      &kp U  &kp I      &kp O    &kp P        &kp AT
+&kp LCTRL         &kp A     &kp S      &kp D      &kp F        &kp G        &mkp MCLK         &mkp MB2       &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS    &kp RET
+&kp LSHFT         &lt 6 Z   &kp X      &kp C      &kp V        &kp B        &kp DELETE        &mkp MB1       &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH    &kp RSHIFT
+&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &lt_int 3 0  &lt 2 SPACE  &mt LSHFT INT4    &kp BACKSPACE  &lt 1 RET                             &shift_rclk  &kp KP_DOT
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -158,10 +156,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans    &trans    &trans    &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans                    &trans    &trans    &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans    &trans  &mkp MB3  &mkp MB1  &mkp MB2  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans  &trans    &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &lt_int 3 0  &trans  &trans    &trans  &trans                                &trans  &trans
             >;
         };
 
