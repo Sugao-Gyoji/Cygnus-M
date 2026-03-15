@@ -77,7 +77,7 @@
             tap-ms = <20>;
         };
 
-        
+/*        
         ek: eisu_kana {
             compatible = "zmk,behavior-tap-dance";
             label = "Eisu / Kana";
@@ -86,7 +86,8 @@
 
             tapping-term-ms = <250>;
         };
-/*
+*/
+
         // ① タップとダブルタップを切り替える設定
 
         td_int: tap_dance_int {
@@ -95,7 +96,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp INT5>, <&kp INT4>;
         };
-
+/*
         // ② 長押しでレイヤー、タップで上記のTap-Danceを呼び出す設定
 
         lt_int: layer_tap_int {
