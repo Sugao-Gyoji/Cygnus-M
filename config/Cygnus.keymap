@@ -77,7 +77,7 @@
             tap-ms = <20>;
         };
 
-        /*
+        
         ek: eisu_kana {
             compatible = "zmk,behavior-tap-dance";
             label = "Eisu / Kana";
@@ -86,7 +86,7 @@
 
             tapping-term-ms = <250>;
         };
-
+/*
         // ① タップとダブルタップを切り替える設定
 
         td_int: tap_dance_int {
