@@ -119,7 +119,7 @@
 &kp TAB           &kp Q     &kp W      &kp E      &kp R    &kp T                                           &kp Y      &kp U  &kp I      &kp O    &kp P        &kp AT
 &kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK         &mkp MB2         &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS    &kp RET
 &kp LSHFT         &lt 6 Z   &kp X      &kp C      &kp V    &kp B        &kp DELETE        &mkp MB1         &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH    &kp RSHIFT
-&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 2 SPACE  &mt LSHFT INT4    &lt 3 BACKSPACE  &lt 1 RET                             &shift_rclk  &kp KP_DOT
+&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 1 SPACE  &mt LSHFT INT4    &lt 3 BACKSPACE  &lt 2 RET                             &shift_rclk  &kp KP_DOT
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
