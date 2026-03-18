@@ -38,9 +38,8 @@
 
 /* マウスレイヤーを使わないためコメントアウトする　
         input-processors = <&zip_temp_layer 4 10000>;
-    };
 */
-
+    };
 };
 
 &pinctrl {
