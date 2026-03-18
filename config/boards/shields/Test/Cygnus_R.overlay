@@ -16,7 +16,7 @@
             ;
 };
 
-/* */
+/* マウスレイヤーを使わないためコメントアウトする　
 &zip_temp_layer {
     excluded-positions = <
         20 // MB3
@@ -29,15 +29,18 @@
     require-prior-idle-ms = <200>;
 };
 
-/* */
+*/
 
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+/* マウスレイヤーを使わないためコメントアウトする　
         input-processors = <&zip_temp_layer 4 10000>;
     };
+*/
+
 };
 
 &pinctrl {
