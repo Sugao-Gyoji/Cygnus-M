@@ -134,10 +134,10 @@
 
         default_layer {
             bindings = <
-&kp TAB           &kp Q     &kp W      &kp E      &kp R    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P        &kp MINUS
-&kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK     &mkp MB4         &kp H      &kp J  &kp K      &lt 5 L  &kp ASTRK    &mkp MB2
-&kp LSHFT         &kp Z     &lt 6 X    &kp C      &kp V    &kp B        &kp DELETE    &kp AT           &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH    &kp RSHIFT
-&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &shift_rclk  &kp KP_DOT
+&kp TAB           &kp Q     &kp W      &kp E      &kp R    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P      &kp MINUS
+&kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK     &kp RIGHT_ARROW  &kp H      &kp J  &kp K      &lt 5 L  &kp AT     &mkp MB2
+&kp LSHFT         &kp Z     &lt 6 X    &kp C      &kp V    &kp B        &kp DELETE    &kp LEFT_ARROW   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHIFT
+&mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &trans     &kp KP_DOT
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -145,10 +145,10 @@
 
         SYMBOLS {
             bindings = <
-&kp LA(NUMBER_1)  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR    &kp PERCENT                                &kp CARET         &kp AMPERSAND      &kp ASTRK         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON
-&kp LA(NUMBER_2)  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans       &kp LC(INSERT)  &kp NUMBER_6      &kp NUMBER_7       &kp NUMBER_8      &kp NUMBER_9          &kp NUMBER_0           &kp SEMI
-&kp LA(NUMBER_3)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &trans        &trans        &kp LG(V)     &kp GRAVE    &kp LC(DELETE)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DQT
-&kp LA(NUMBER_4)  &trans            &trans            &trans        &trans        &trans        &trans       &trans          &trans                                                                       &kp TILDE              &kp APOS
+&kp LA(NUMBER_1)  &kp EXCL          &kp AT            &kp HASH      &kp DOLLAR    &kp PERCENT                                &kp CARET     &kp AMPERSAND  &trans        &kp ASTRK         &kp COLON          &kp SEMICOLON
+&kp LA(NUMBER_2)  &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans       &kp LC(INSERT)  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9      &kp NUMBER_0       &kp SEMI
+&kp LA(NUMBER_3)  &kp LA(NUMBER_5)  &kp LA(NUMBER_6)  &trans        &trans        &kp LG(V)     &kp GRAVE    &kp LC(DELETE)  &trans        &trans         &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DQT
+&kp LA(NUMBER_4)  &trans            &trans            &trans        &trans        &trans        &trans       &trans          &trans                                                       &kp TILDE          &kp APOS
             >;
         };
 
