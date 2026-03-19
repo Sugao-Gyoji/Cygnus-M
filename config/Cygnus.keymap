@@ -51,6 +51,21 @@
             bindings = <&kp LC(V)>;
             key-positions = <36 37>;
         };
+
+        como_lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <7 8>;
+        };
+
+        combo_rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <8 9>;
+        };
+
+        combo_mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <21 22 23>;
+        };
     };
 
     macros {
@@ -115,7 +130,7 @@
         default_layer {
             bindings = <
 &kp TAB           &kp Q     &kp W      &kp E      &kp R    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P        &kp MINUS
-&kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK     &mkp MB4         &kp H      &kp J  &kp K      &lt 5 L  &mkp MB1     &mkp MB2
+&kp LCTRL         &kp A     &kp S      &kp D      &kp F    &kp G        &mkp MCLK     &mkp MB4         &kp H      &kp J  &kp K      &lt 5 L  &kp ASTRK    &mkp MB2
 &kp LSHFT         &kp Z     &lt 6 X    &kp C      &kp V    &kp B        &kp DELETE    &kp AT           &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH    &kp RSHIFT
 &mt LEFT_ALT ESC  &kp LGUI  &kp LC(V)  &kp LC(C)  &td_int  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &shift_rclk  &kp KP_DOT
             >;
