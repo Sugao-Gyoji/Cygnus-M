@@ -137,7 +137,7 @@
 &kp TAB           &kp Q     &kp W   &kp E   &kp R    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P           &trans
 &kp LCTRL         &kp A     &kp S   &kp D   &kp F    &kp G        &mkp MCLK     &kp RIGHT_ARROW  &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS       &kp AT
 &kp LSHFT         &kp Z     &kp X   &kp C   &kp V    &kp B        &kp DELETE    &kp LEFT_ARROW   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH       &kp RSHIFT
-&mt LEFT_ALT ESC  &kp LGUI  &trans  &trans  &td_int  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &lt 6 LS(CAPS)  &kp KP_DOT
+&mt LEFT_ALT ESC  &kp LGUI  &trans  &trans  &td_int  &lt 2 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 1 RET                             &lt 6 LS(CAPS)  &kp KP_DOT
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -154,10 +154,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                                     &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTRK        &kp SLASH
-&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp LC(LA(KP_NUMBER_0))    &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp PLUS
-&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans                     &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp MINUS
-&trans  &trans   &trans   &trans   &trans   &trans   &trans                     &trans  &trans                                                     &kp RET          &kp EQUAL
+&trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                                     &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTRK        &kp SLASH
+&trans  &kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &kp LC(LA(KP_NUMBER_0))    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp PLUS
+&trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5   &trans                     &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp MINUS
+&trans  &trans   &trans   &trans   &trans   &trans   &trans                     &trans  &trans                                                              &kp RET          &kp EQUAL
             >;
         };
 
