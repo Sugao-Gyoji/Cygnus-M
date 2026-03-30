@@ -71,6 +71,11 @@
             bindings = <&mkp MB4>;
             key-positions = <23 24>;
         };
+
+        combo_int4 {
+            bindings = <&kp INT4>;
+            key-positions = <16 15>;
+        };
     };
 
     macros {
