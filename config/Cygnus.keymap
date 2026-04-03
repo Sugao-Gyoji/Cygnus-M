@@ -76,6 +76,11 @@
             bindings = <&kp INT4>;
             key-positions = <16 15>;
         };
+
+        combo_int5 {
+            bindings = <&kp INT5>;
+            key-positions = <15 14>;
+        };
     };
 
     macros {
