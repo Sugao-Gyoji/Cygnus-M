@@ -108,6 +108,18 @@
 
             // 4. Shiftを離す
         };
+
+        // IME切り替えマクロ (Alt + Grave)
+        ime_tog: ime_toggle {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp GRAVE>,
+                <&macro_release &kp LALT>;
+        };
     };
 
     behaviors {
@@ -130,12 +142,20 @@
         };
 
         // ① タップとダブルタップを切り替える設定
-
         td_int: tap_dance_int {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp INT5>, <&kp INT4>;
+        };
+
+        // タップでIME切り替え、ホールドで左Shift
+        ime_shift: ime_shift {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&ime_tog>;
         };
     };
 
