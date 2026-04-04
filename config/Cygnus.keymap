@@ -144,10 +144,10 @@
 
         default_layer {
             bindings = <
-&kp TAB     &kp Q     &kp W      &kp E     &kp R    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P           &kp AT
-&kp LCTRL   &kp A     &kp S      &kp D     &kp F    &kp G        &mkp MCLK     &kp RIGHT_ARROW  &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS       &kp AT
-&kp LSHFT   &kp Z     &kp X      &kp C     &kp V    &kp B        &kp DELETE    &kp LEFT_ARROW   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH       &kp RSHIFT
-&kp ESCAPE  &kp LGUI  &kp LANG5  &kp LALT  &td_int  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &lt 6 LS(CAPS)  &kp KP_DOT
+&kp TAB     &kp Q     &kp W   &kp E     &kp R                    &kp T                                       &kp Y      &kp U  &kp I      &kp O    &kp P           &kp AT
+&kp LCTRL   &kp A     &kp S   &kp D     &kp F                    &kp G        &mkp MCLK     &kp RIGHT_ARROW  &kp H      &kp J  &kp K      &lt 5 L  &kp MINUS       &kp AT
+&kp LSHFT   &kp Z     &kp X   &kp C     &kp V                    &mt LCTRL B  &kp DELETE    &kp LEFT_ARROW   &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH       &kp RSHIFT
+&kp ESCAPE  &kp LGUI  &trans  &kp LALT  &mt LSHFT LS(LA(GRAVE))  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 RET                             &lt 6 LS(CAPS)  &kp KP_DOT
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
