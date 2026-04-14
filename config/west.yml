@@ -7,7 +7,9 @@ manifest:
     - name: Dist16384   # あなたのフォーク
       url-base: https://github.com/Dist16384
     - name: caksoylar  # <-- RGB LED
-      url-base: https://github.com/caksoylar  
+      url-base: https://github.com/caksoylar
+    - name: kot149
+      url-base: https://github.com/kot149
 
   projects:
     - name: zmk
