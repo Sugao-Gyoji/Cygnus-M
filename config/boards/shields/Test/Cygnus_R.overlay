@@ -18,10 +18,11 @@
 };
 
 / {
-    trackball_listener {
+    /* ノード名の前に「ラベル名:」を追加する */
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
+        status = "okay"; // 念のためここにもstatusを
     };
 };
 
