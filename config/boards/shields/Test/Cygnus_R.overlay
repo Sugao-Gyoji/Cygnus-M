@@ -18,36 +18,40 @@
 };
 
 / {
-    /* ここを「ラベル: ノード名」に修正 */
+    /* ラベルを付けて、サンプル通りの構成にします */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        status = "okay"; // 有効化
+
+        /* サンプルに従い &zip_mouse_gesture を登録。
+           これだけを書くと、&mouse_gesture キーを押した時だけ
+           このプロセッサが反応するようになります。
+        */
         input-processors = <&zip_mouse_gesture>;
     };
 };
 
+/* ジェスチャーの設定（数値版） */
 &zip_mouse_gesture {
-    status = "okay";           // これを忘れずに追加
+    status = "okay";
     stroke-size = <300>;
     enable-eager-mode;
 
     history_back {
-        pattern = <1>;         // GESTURE_RIGHT = 1
+        pattern = <1>; // RIGHT
         bindings = <&kp LA(LEFT)>;
     };
-
     history_forward {
-        pattern = <0>;         // GESTURE_LEFT = 0
+        pattern = <0>; // LEFT
         bindings = <&kp LA(RIGHT)>;
     };
-
     close_tab {
-        pattern = <3 1>;       // GESTURE_DOWN = 3, GESTURE_RIGHT = 1
+        pattern = <3 1>; // DOWN -> RIGHT
         bindings = <&kp LC(W)>;
     };
-
     new_tab {
-        pattern = <3 0>;       // GESTURE_DOWN = 3, GESTURE_LEFT = 0
+        pattern = <3 0>; // DOWN -> LEFT
         bindings = <&kp LC(T)>;
     };
 };
