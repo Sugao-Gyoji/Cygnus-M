@@ -18,13 +18,40 @@
 };
 
 / {
-    /* ノード名の前に「ラベル名:」を追加する */
+    /* ここを「ラベル: ノード名」に修正 */
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        status = "okay"; // 念のためここにもstatusを
+        input-processors = <&zip_mouse_gesture>;
     };
 };
+
+&zip_mouse_gesture {
+    stroke-size = <300>; // Optional (default: 200)
+    enable-eager-mode; // Optional, but recommended
+
+    history_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(LEFT)>;
+    };
+
+    history_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(RIGHT)>;
+    };
+
+    close_tab {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LC(W)>;
+    };
+
+    new_tab {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LC(T)>;
+    };
+};
+
+
 
 &pinctrl {
     spi0_default: spi0_default {
