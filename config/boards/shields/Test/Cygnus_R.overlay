@@ -27,30 +27,30 @@
 };
 
 &zip_mouse_gesture {
-    stroke-size = <300>; // Optional (default: 200)
-    enable-eager-mode; // Optional, but recommended
+    status = "okay";           // これを忘れずに追加
+    stroke-size = <300>;
+    enable-eager-mode;
 
     history_back {
-        pattern = <GESTURE_RIGHT>;
+        pattern = <1>;         // GESTURE_RIGHT = 1
         bindings = <&kp LA(LEFT)>;
     };
 
     history_forward {
-        pattern = <GESTURE_LEFT>;
+        pattern = <0>;         // GESTURE_LEFT = 0
         bindings = <&kp LA(RIGHT)>;
     };
 
     close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        pattern = <3 1>;       // GESTURE_DOWN = 3, GESTURE_RIGHT = 1
         bindings = <&kp LC(W)>;
     };
 
     new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        pattern = <3 0>;       // GESTURE_DOWN = 3, GESTURE_LEFT = 0
         bindings = <&kp LC(T)>;
     };
 };
-
 
 
 &pinctrl {
