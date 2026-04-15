@@ -31,10 +31,6 @@
     zip_keybind_keys: zip_keybind_keys {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>; 
-        
-        /* ここを追加！ */
-        lazy; 
-
         track_remainders;
         bindings = <&kp UP &kp DOWN &kp LEFT &kp RIGHT>;
         tick = <40>;
@@ -46,7 +42,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         status = "okay";
-        input-processors = <&zip_mouse_gesture>,<&zip_keybind_keys>;
+        
+        /* ここから &zip_keybind_keys を外します */
+        /* これで「常時発動」が止まります */
+        input-processors = <&zip_mouse_gesture>; 
     };
 };
 
