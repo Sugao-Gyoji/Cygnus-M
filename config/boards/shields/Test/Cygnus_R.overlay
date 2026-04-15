@@ -32,7 +32,7 @@
         input-processors = <&zip_mouse_gesture>;
     };
 };
-
+/*
 &zip_mouse_gesture {
     status = "okay";
     stroke-size = <200>;
@@ -53,6 +53,30 @@
     new_tab {
         pattern = <GESTURE_DOWN GESTURE_LEFT>;
         bindings = <&kp LC(T)>;
+    };
+};
+*/
+
+/* テスト用定義 */
+&zip_mouse_gesture {
+    status = "okay";
+    stroke-size = <300>;
+
+    test_0 {
+        pattern = <0>;
+        bindings = <&kp L>; // 'L' (Left?)
+    };
+    test_1 {
+        pattern = <1>;
+        bindings = <&kp R>; // 'R' (Right?)
+    };
+    test_2 {
+        pattern = <2>;
+        bindings = <&kp U>; // 'U' (Up?)
+    };
+    test_3 {
+        pattern = <3>;
+        bindings = <&kp D>; // 'D' (Down?)
     };
 };
 
