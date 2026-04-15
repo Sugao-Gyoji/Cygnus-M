@@ -162,10 +162,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp F11  &kp F12  &trans  &trans  &trans                     &trans  &kp AMPS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &trans
-&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &trans  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT    &trans
-&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &trans  &trans  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &trans
-&trans  &trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                                                              &trans         &trans
+&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                     &trans  &kp AMPS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &macro_bsp
+&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &trans  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT    &macro_sus
+&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &trans  &trans  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &macro_al
+&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                                                              &trans         &macro_film
             >;
         };
 
