@@ -10,6 +10,17 @@
 #define SCROLL 5
 #define NUM 6
 
+/* mouse-gesture の挙動を補完する設定 */
+&mouse_gesture_kp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+};
+
+&mouse_gesture_mkp {
+    tapping-term-ms = <200>;
+    quick-tap-ms = <175>;
+};
+
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
