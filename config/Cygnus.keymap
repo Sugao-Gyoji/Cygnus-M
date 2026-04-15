@@ -86,9 +86,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            /* ここで & を付けて参照します。
-               第1引数として 0 (インデックス) を渡す設定にします。
-            */
+            /* &zip_keybind_keys を呼び出すことで、その間だけプロセッサが ON になります */
             bindings = <&zip_keybind_keys>, <&kp>;
         };
     };
