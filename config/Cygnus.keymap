@@ -86,7 +86,7 @@
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            /* &zip_keybind_keys を呼び出すことで、その間だけプロセッサが ON になります */
+            /* &zip_keybind_keys をホールド側に、&kp をタップ側に */
             bindings = <&zip_keybind_keys>, <&kp>;
         };
     };
