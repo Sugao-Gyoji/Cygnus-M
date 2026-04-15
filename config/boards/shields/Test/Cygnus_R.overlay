@@ -57,26 +57,27 @@
 };
 */
 
-/* テスト用定義 */
+/* デバッグ用：どの方向に振るとどの文字が出るか確認 */
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <300>;
+    stroke-size = <150>; // 判定しやすくするために一時的に短くします
+    enable-eager-mode;
 
-    test_0 {
+    direction_0 {
         pattern = <0>;
-        bindings = <&kp L>; // 'L' (Left?)
+        bindings = <&kp N0>; // 0が出れば、その方向は「0」
     };
-    test_1 {
+    direction_1 {
         pattern = <1>;
-        bindings = <&kp R>; // 'R' (Right?)
+        bindings = <&kp N1>; // 1が出れば、その方向は「1」
     };
-    test_2 {
+    direction_2 {
         pattern = <2>;
-        bindings = <&kp U>; // 'U' (Up?)
+        bindings = <&kp N2>; // 2が出れば、その方向は「2」
     };
-    test_3 {
+    direction_3 {
         pattern = <3>;
-        bindings = <&kp D>; // 'D' (Down?)
+        bindings = <&kp N3>; // 3が出れば、その方向は「3」
     };
 };
 
