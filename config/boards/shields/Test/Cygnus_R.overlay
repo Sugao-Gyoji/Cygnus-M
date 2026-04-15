@@ -30,14 +30,15 @@
 / {
     zip_keybind_keys: zip_keybind_keys {
         compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <0>;
+        #input-processor-cells = <0>; 
+        
+        /* ここを追加！ */
+        lazy; 
+
         track_remainders;
-        
-        /* 方向順： <上(1) 下(2) 左(4) 右(8)> */
         bindings = <&kp UP &kp DOWN &kp LEFT &kp RIGHT>;
-        
-        tick = <40>;      // 連打のしきい値
-        tap-ms = <10>;    // キーの押し下げ時間
+        tick = <40>;
+        tap-ms = <10>;
         wait-ms = <0>;
     };
 
