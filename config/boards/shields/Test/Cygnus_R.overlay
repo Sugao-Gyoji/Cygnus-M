@@ -1,10 +1,11 @@
 #include "Cygnus.dtsi"
 #include <input/processors.dtsi>
 #include <mouse-gesture.dtsi>
+#include <input/processors/zmk-input-processor-keybind.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-/* あなたの環境の実測値に基づく独自定義 */
+/* あなたの環境の実測値に基づく独自定義 gestuer_mouse用 */
 #define MG_UP    1
 #define MG_DOWN  2
 #define MG_RIGHT 8
@@ -27,11 +28,24 @@
 };
 
 / {
+    zip_keybind_keys: zip_keybind_keys {
+        compatible = "zmk,input-processor-keybind";
+        #input-processor-cells = <1>; // keymapから引数(0)を受け取るために1に設定
+        track_remainders;
+        
+        /* 方向順： <上(1) 下(2) 左(4) 右(8)> */
+        bindings = <&kp UP &kp DOWN &kp LEFT &kp RIGHT>;
+        
+        tick = <40>;      // 連打のしきい値
+        tap-ms = <10>;    // キーの押し下げ時間
+        wait-ms = <0>;
+    };
+
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
         status = "okay";
-        input-processors = <&zip_mouse_gesture>;
+        input-processors = <&zip_mouse_gesture>,<&zip_keybind_keys>;
     };
 };
 
@@ -61,6 +75,8 @@
         bindings = <&kp LC(T)>;
     };
 };
+
+
 
 
 &pinctrl {
