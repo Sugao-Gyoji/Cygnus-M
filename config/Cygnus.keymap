@@ -35,6 +35,21 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        combo_mb1 {
+            bindings = <&mkp MB1>;
+            key-positions = <21 22>;
+        };
+
+        combo_mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <22 23>;
+        };
+
+        combo_mb3 {
+            bindings = <&mkp MB3>;
+            key-positions = <21 22 23>;
+        };
     };
 
     macros {
