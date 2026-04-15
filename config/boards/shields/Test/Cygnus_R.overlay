@@ -31,6 +31,10 @@
     zip_keybind_keys: zip_keybind_keys {
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>; 
+        
+        /* 念のため追加：プロセッサ側で「命令がない時は動かない」ように指定 */
+        /* ただし、このモジュールでは behaviors 側での制御が主となります */
+
         track_remainders;
         bindings = <&kp UP &kp DOWN &kp LEFT &kp RIGHT>;
         tick = <40>;
@@ -43,9 +47,8 @@
         device = <&trackball>;
         status = "okay";
         
-        /* ここから &zip_keybind_keys を外します */
-        /* これで「常時発動」が止まります */
-        input-processors = <&zip_mouse_gesture>; 
+        /* 再びリストに追加します */
+        input-processors = <&zip_mouse_gesture>, <&zip_keybind_keys>; 
     };
 };
 
