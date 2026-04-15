@@ -50,7 +50,7 @@
 
         /* 特定のレイヤー（例：5番）にいる時だけプロセッサを追加適用する */
         layer-5 {
-            layers = <5>;
+            layers = <4>;
             input-processors = <&zip_mouse_gesture>, <&zip_keybind_keys>;
         };
     };
