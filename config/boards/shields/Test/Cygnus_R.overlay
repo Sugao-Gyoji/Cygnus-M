@@ -60,15 +60,19 @@
 
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <100>; // さらに短くして、わずかな動きでも反応させる
+    /* 極限まで敏感にします */
+    stroke-size = <30>;       // 30ドットの移動で判定（左右が拾えるまで下げます）
+    check-interval = <5>;      // 5msごとに判定。速いフリップを逃さないため
+    max-time = <500>;          // フリップを完了させるまでの最大時間（ms）
+
     enable-eager-mode;
 
+    /* direction_0~3 の設定はそのまま */
     direction_0 { pattern = <0>; bindings = <&kp N0>; };
     direction_1 { pattern = <1>; bindings = <&kp N1>; };
     direction_2 { pattern = <2>; bindings = <&kp N2>; };
     direction_3 { pattern = <3>; bindings = <&kp N3>; };
 };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
