@@ -4,6 +4,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
 
+/* あなたの環境の実測値に基づく独自定義 */
+#define MG_UP    1
+#define MG_DOWN  2
+#define MG_RIGHT 8
+#define MG_LEFT  4
+
+
 &default_transform {
     col-offset = <7>;
 };
@@ -27,50 +34,35 @@
         input-processors = <&zip_mouse_gesture>;
     };
 };
-/*
+
+
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <200>;
+    stroke-size = <150　>; 
     enable-eager-mode;
 
     history_back {
-        pattern = <GESTURE_RIGHT>;
+        pattern = <MG_RIGHT>;
         bindings = <&kp LA(LEFT)>;
     };
+
     history_forward {
-        pattern = <GESTURE_LEFT>;
+        pattern = <MG_LEFT>;
         bindings = <&kp LA(RIGHT)>;
     };
+
     close_tab {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        pattern = <MG_DOWN MG_RIGHT>;
         bindings = <&kp LC(W)>;
     };
+
     new_tab {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        pattern = <MG_DOWN MG_LEFT>;
         bindings = <&kp LC(T)>;
     };
 };
-*/
 
-&zip_mouse_gesture {
-    status = "okay";
-    /* 左右を確実に拾うため、一旦 50 に設定 */
-    stroke-size = <50>; 
-    /* エラーの原因なので削除しました */
-    // check-interval = <5>; 
 
-    enable-eager-mode;
-
-    /* モジュールの実測値（4, 8, 1, 2）に基づいて全スロットを確認 */
-    dir_4 { pattern = <4>; bindings = <&kp N4>; }; // おそらく LEFT
-    dir_8 { pattern = <8>; bindings = <&kp N8>; }; // おそらく RIGHT
-    dir_1 { pattern = <1>; bindings = <&kp N1>; }; // 実測 UP
-    dir_2 { pattern = <2>; bindings = <&kp N2>; }; // 実測 DOWN
-
-    /* 念のため、これまで出なかった 0 と 3 も残して確認 */
-    dir_0 { pattern = <0>; bindings = <&kp N0>; };
-    dir_3 { pattern = <3>; bindings = <&kp N3>; };
-};
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
