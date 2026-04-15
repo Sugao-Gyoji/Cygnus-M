@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: kot149
       url-base: https://github.com/kot149
+    - name: zettaface
+      url-base: https://github.com/zettaface
 
   projects:
     - name: zmk
@@ -27,6 +29,9 @@ manifest:
     - name: zmk-mouse-gesture
       remote: kot149
       revision: v1
+    - name: zmk-input-processor-keybind
+      remote: zettaface
+      revision: main
 
 
   self:
