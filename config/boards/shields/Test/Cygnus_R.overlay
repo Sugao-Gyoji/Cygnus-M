@@ -4,12 +4,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-/* あなたの環境の実測値に基づく定義 */
-#define GESTURE_UP    1
-#define GESTURE_DOWN  2
-#define GESTURE_LEFT  0  // おそらくこれ
-#define GESTURE_RIGHT 3  // おそらくこれ
-
 &default_transform {
     col-offset = <7>;
 };
@@ -60,18 +54,22 @@
 
 &zip_mouse_gesture {
     status = "okay";
-    /* 極限まで敏感にします */
-    stroke-size = <30>;       // 30ドットの移動で判定（左右が拾えるまで下げます）
-    check-interval = <5>;      // 5msごとに判定。速いフリップを逃さないため
-    max-time = <500>;          // フリップを完了させるまでの最大時間（ms）
+    /* 左右を確実に拾うため、一旦 50 に設定 */
+    stroke-size = <50>; 
+    /* エラーの原因なので削除しました */
+    // check-interval = <5>; 
 
     enable-eager-mode;
 
-    /* direction_0~3 の設定はそのまま */
-    direction_0 { pattern = <0>; bindings = <&kp N0>; };
-    direction_1 { pattern = <1>; bindings = <&kp N1>; };
-    direction_2 { pattern = <2>; bindings = <&kp N2>; };
-    direction_3 { pattern = <3>; bindings = <&kp N3>; };
+    /* モジュールの実測値（4, 8, 1, 2）に基づいて全スロットを確認 */
+    dir_4 { pattern = <4>; bindings = <&kp N4>; }; // おそらく LEFT
+    dir_8 { pattern = <8>; bindings = <&kp N8>; }; // おそらく RIGHT
+    dir_1 { pattern = <1>; bindings = <&kp N1>; }; // 実測 UP
+    dir_2 { pattern = <2>; bindings = <&kp N2>; }; // 実測 DOWN
+
+    /* 念のため、これまで出なかった 0 と 3 も残して確認 */
+    dir_0 { pattern = <0>; bindings = <&kp N0>; };
+    dir_3 { pattern = <3>; bindings = <&kp N3>; };
 };
 &pinctrl {
     spi0_default: spi0_default {
