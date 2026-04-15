@@ -38,7 +38,7 @@
 
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <150　>; 
+    stroke-size = <150>; 
     enable-eager-mode;
 
     history_back {
