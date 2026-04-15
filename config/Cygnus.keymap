@@ -11,6 +11,7 @@
 #define SCROLL 5
 #define NUM 6
 
+
 /* mouse-gesture の挙動を補完する設定 */
 
 &mouse_gesture_kp {
