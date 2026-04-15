@@ -92,11 +92,6 @@
     };
 
     keymap {
-        /* ... default_layer など ... */
-    };
-    };
-
-    keymap {
         compatible = "zmk,keymap";
 
         default_layer {
