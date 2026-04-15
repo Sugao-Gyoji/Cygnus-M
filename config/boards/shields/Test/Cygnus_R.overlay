@@ -4,10 +4,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/modifiers.h>
 
-#define GESTURE_LEFT  0
-#define GESTURE_RIGHT 1
-#define GESTURE_UP    2
-#define GESTURE_DOWN  3
+/* あなたの環境の実測値に基づく定義 */
+#define GESTURE_UP    1
+#define GESTURE_DOWN  2
+#define GESTURE_LEFT  0  // おそらくこれ
+#define GESTURE_RIGHT 3  // おそらくこれ
 
 &default_transform {
     col-offset = <7>;
@@ -57,28 +58,15 @@
 };
 */
 
-/* デバッグ用：どの方向に振るとどの文字が出るか確認 */
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <150>; // 判定しやすくするために一時的に短くします
+    stroke-size = <100>; // さらに短くして、わずかな動きでも反応させる
     enable-eager-mode;
 
-    direction_0 {
-        pattern = <0>;
-        bindings = <&kp N0>; // 0が出れば、その方向は「0」
-    };
-    direction_1 {
-        pattern = <1>;
-        bindings = <&kp N1>; // 1が出れば、その方向は「1」
-    };
-    direction_2 {
-        pattern = <2>;
-        bindings = <&kp N2>; // 2が出れば、その方向は「2」
-    };
-    direction_3 {
-        pattern = <3>;
-        bindings = <&kp N3>; // 3が出れば、その方向は「3」
-    };
+    direction_0 { pattern = <0>; bindings = <&kp N0>; };
+    direction_1 { pattern = <1>; bindings = <&kp N1>; };
+    direction_2 { pattern = <2>; bindings = <&kp N2>; };
+    direction_3 { pattern = <3>; bindings = <&kp N3>; };
 };
 
 &pinctrl {
