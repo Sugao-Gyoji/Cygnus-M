@@ -81,6 +81,14 @@
         pattern = <MG_DOWN MG_LEFT>;
         bindings = <&kp LC(T)>;
     };
+    change_int4 {
+        pattern = <MG_UP>;
+        bindings = <&kp INT4>;
+    };
+    change_int5 {
+        pattern = <MG_DOWN>;
+        bindings = <&kp INT5>;
+    };
 };
 
 
