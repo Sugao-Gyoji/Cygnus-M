@@ -30,7 +30,7 @@
 / {
     zip_keybind_keys: zip_keybind_keys {
         compatible = "zmk,input-processor-keybind";
-        #input-processor-cells = <1>; // keymapから引数(0)を受け取るために1に設定
+        #input-processor-cells = <0>;
         track_remainders;
         
         /* 方向順： <上(1) 下(2) 左(4) 右(8)> */
