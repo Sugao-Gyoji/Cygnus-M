@@ -110,10 +110,10 @@
             label = "MACRO_TRANS";
         };
 
-        new_macro: new_macro {
+        macro_mv_uriage: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none>;
+            bindings = <&kp INTERNATIONAL_5 &kp LA(U) &kp C>;
             label = "NEW_MACRO";
         };
     };
@@ -178,12 +178,12 @@
             >;
         };
 
-        ARROW {
+        CUSTOM {
             bindings = <
-&trans  &kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans  &trans
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans                          &trans  &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
