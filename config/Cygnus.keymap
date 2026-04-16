@@ -129,6 +129,27 @@
             bindings = <&kp INTERNATIONAL_5 &kp LA(U) &kp A>;
             label = "MACRO_MITUMORI";
         };
+
+        macro_oder_num: macro_oder_num {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp N0 &kp N1 &kp N0 &kp N0 &kp N0 &kp N0 &kp N1>;
+            label = "MACRO_ODER_NUM";
+        };
+
+        macro_const_num: macro_const_num {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp N0 &kp N1 &kp N0 &kp N0 &kp N0 &kp N0 &kp N2>;
+            label = "MACRO_CONST_NUM";
+        };
+
+        macro_draw_num: macro_draw_num {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp INTERNATIONAL_5 &kp N0 &kp N1 &kp N0 &kp N0 &kp N0 &kp N0 &kp N7>;
+            label = "MACRO_DRAW_NUM";
+        };
     };
 
     behaviors {
@@ -175,10 +196,10 @@
 
         FUNCTION-ARROW {
             bindings = <
-&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                          &kp ESCAPE  &kp LS(LC(TAB))    &kp UP_ARROW    &kp LC(TAB)      &kp LG(LC(O))  &macro_bsp
-&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &kp LC(INS)  &kp HOME    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &macro_sus
-&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &kp LC(DEL)  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans         &macro_al
-&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans       &trans                                                          &trans         &macro_film
+&trans  &kp F11  &kp F12  &trans  &trans  &trans                          &kp ESCAPE  &kp LS(LC(TAB))    &kp UP_ARROW    &kp LC(TAB)      &kp LG(LC(O))  &trans
+&trans  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &kp LC(INS)  &kp HOME    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &trans
+&trans  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &kp LC(DEL)  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans         &trans
+&trans  &trans   &trans   &trans  &trans  &trans   &trans    &trans       &trans                                                          &trans         &trans
             >;
         };
 
@@ -193,10 +214,10 @@
 
         CUSTOM {
             bindings = <
-&macro_trans    &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)    &kp LA(N5)                     &trans  &trans  &trans  &trans  &trans  &macro_bsp
-&macro_seal     &trans            &macro_mv_uriage  &macro_mv_jyutyu  &macro_mv_mitumori  &kp LC(INS)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &macro_sus
-&macro_acrylic  &trans            &trans            &trans            &kp LC(B)           &kp LC(DEL)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &macro_al
-&trans          &trans            &trans            &trans            &trans              &trans       &trans    &trans  &trans                          &trans  &macro_film
+&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)    &kp LA(N5)                     &trans  &macro_oder_num  &macro_const_num  &macro_draw_num  &trans       &trans
+&trans  &trans            &macro_mv_uriage  &macro_mv_jyutyu  &macro_mv_mitumori  &kp LC(INS)  &trans    &trans  &trans  &macro_sus       &macro_bsp        &macro_al        &macro_film  &trans
+&trans  &trans            &trans            &trans            &kp LC(B)           &kp LC(DEL)  &trans    &trans  &trans  &macro_trans     &macro_seal       &macro_acrylic   &trans       &trans
+&trans  &trans            &trans            &trans            &trans              &trans       &trans    &trans  &trans                                                      &trans       &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
