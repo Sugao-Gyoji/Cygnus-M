@@ -162,10 +162,10 @@
 
         FUNCTION-ARROW {
             bindings = <
-&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                          &kp ESCAPE  &kp LS(LC(TAB))    &kp UP_ARROW    &kp LC(TAB)      &kp LG(LC(N0))  &macro_bsp
-&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &kp LC(INS)  &kp HOME    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END         &macro_sus
-&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &kp LC(DEL)  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans          &macro_al
-&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans       &trans                                                          &trans          &macro_film
+&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                          &kp ESCAPE  &kp LS(LC(TAB))    &kp UP_ARROW    &kp LC(TAB)      &kp LG(LC(O))  &macro_bsp
+&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &kp LC(INS)  &kp HOME    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &macro_sus
+&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &kp LC(DEL)  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans         &macro_al
+&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans       &trans                                                          &trans         &macro_film
             >;
         };
 
