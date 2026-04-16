@@ -171,10 +171,10 @@
 
         NUM {
             bindings = <
-&trans  &kp F11  &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                                          &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL  &trans
-&trans  &kp F6   &kp AT    &kp LPAR          &kp RPAR           &kp PERCENT  &kp LC(LA(KP_NUMBER_0))    &trans    &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS   &trans
-&trans  &kp F1   &kp SEMI  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BSLH     &trans                     &trans    &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ASTRK  &trans
-&trans  &trans   &trans    &trans            &trans             &trans       &trans                     &kp INT5  &kp INT4                                    &trans     &trans
+&trans  &kp EXCLAMATION   &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                                                     &kp EQUAL      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL  &trans
+&trans  &kp GRAVE         &kp AT    &kp LPAR          &kp RPAR           &kp PERCENT  &kp LC(LA(KP_NUMBER_0))    &kp INTERNATIONAL_5  &kp KP_N0      &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS   &trans
+&trans  &kp SINGLE_QUOTE  &kp SEMI  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BSLH     &trans                     &trans               &kp KP_N0      &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp ASTRK  &trans
+&trans  &trans            &trans    &trans            &trans             &trans       &trans                     &trans               &kp LA(GRAVE)                                   &trans     &trans
             >;
         };
 
