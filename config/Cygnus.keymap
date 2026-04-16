@@ -151,10 +151,10 @@
 
         default_layer {
             bindings = <
-&trans  &kp Q        &kp W         &kp E          &kp R         &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
-&trans  &mt LCTRL A  &kp S         &kp D          &kp F         &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
-&trans  &mt LSHFT Z  &kp X         &kp C          &kp V         &kp B        &kp DELETE    &kp DOWN_ARROW   &kp N        &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
-&trans  &trans       &mt LALT ESC  &kp LC(LMETA)  &mt LALT TAB  &lt 2 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 1 ENTER                                                      &trans           &trans
+&trans  &kp Q        &kp W         &kp E      &kp R         &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
+&trans  &mt LCTRL A  &kp S         &kp D      &kp F         &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
+&trans  &mt LSHFT Z  &kp X         &kp C      &kp V         &kp B        &kp DELETE    &kp DOWN_ARROW   &kp N        &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
+&trans  &trans       &mt LALT ESC  &kp LMETA  &mt LALT TAB  &lt 2 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 1 ENTER                                                      &trans           &trans
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
@@ -180,10 +180,10 @@
 
         CUSTOM {
             bindings = <
-&trans  &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &trans            &trans      &trans    &trans  &trans                          &trans  &trans
+&macro_trans    &kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &kp LA(NUMBER_4)  &kp LA(N5)                     &trans  &trans  &trans  &trans  &trans  &macro_bsp
+&macro_seal     &trans            &macro_mv_uriage  &trans            &trans            &kp LC(INS)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &macro_sus
+&macro_acrylic  &trans            &trans            &trans            &kp LC(B)         &kp LC(DEL)  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &macro_al
+&trans          &trans            &trans            &trans            &trans            &trans       &trans    &trans  &trans                          &trans  &macro_film
             >;
 
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
