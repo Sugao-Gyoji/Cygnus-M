@@ -160,12 +160,12 @@
             sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
-        FUNCTION {
+        FUNCTION-ARROW {
             bindings = <
-&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                     &trans  &kp AMPS       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE       &macro_bsp
-&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &trans  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERCENT    &macro_sus
-&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &trans  &trans  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH  &macro_al
-&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                                                              &trans         &macro_film
+&macro_trans    &kp F11  &kp F12  &trans  &trans  &trans                     &kp ESCAPE  &kp LS(LC(TAB))    &kp UP_ARROW    &kp LC(TAB)      &kp LG(LC(N0))  &macro_bsp
+&macro_seal     &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans    &trans  &kp HOME    &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END         &macro_sus
+&macro_acrylic  &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans    &trans  &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans          &macro_al
+&trans          &trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                                                          &trans          &macro_film
             >;
         };
 
