@@ -33,7 +33,7 @@
         compatible = "zmk,input-processor-keybind";
         #input-processor-cells = <0>; 
         track_remainders;
-        bindings = <&kp UP &kp DOWN &kp LEFT &kp RIGHT>;
+        bindings = <&kp DOWN &kp UP &kp LEFT &kp RIGHT>;
         tick = <40>;
         tap-ms = <10>;
         wait-ms = <0>;
