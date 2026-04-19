@@ -59,7 +59,10 @@
 
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <150>; 
+    tapping-term-ms = <200>;
+    stroke-size = <150>;
+    quick-tap-ms = <175>;
+    flavor = "tap-preferred";
     enable-eager-mode;
 
     history_back {
