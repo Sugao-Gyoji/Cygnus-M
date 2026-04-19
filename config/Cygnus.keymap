@@ -13,12 +13,13 @@
 /* mouse-gesture の挙動を補完する設定 */
 
 &mouse_gesture_kp {
-    tapping-term-ms = <200>;
+    tapping-term-ms = <500>;
     quick-tap-ms = <175>;
+    flavor = "tap-preferred";
 };
 
 &mouse_gesture_mkp {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <500>;
     quick-tap-ms = <175>;
     flavor = "tap-preferred";
 };
