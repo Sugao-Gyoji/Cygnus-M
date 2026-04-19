@@ -173,6 +173,24 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
         };
+
+        alt_int5: alt_international5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ALT_INTERNATIONAL5";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        // Tap-Danceの中で呼び出す
+        td_custom: tap_dance_custom {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CUSTOM";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sh_sp LALT INT5>, <&kp INT4>;
+        };
     };
 
     keymap {
