@@ -183,7 +183,7 @@
             label = "ALT_INTERNATIONAL5";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -193,7 +193,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CUSTOM";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&alt_int5 LALT INT5>, <&kp INT4>;
         };
 
@@ -201,7 +201,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACKET";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
@@ -209,7 +209,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PAR";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
 
@@ -217,7 +217,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_BRACE";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
     };
