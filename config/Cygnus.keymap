@@ -223,7 +223,7 @@
 
         NUM {
             bindings = <
-&trans  &kp EXCLAMATION         &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                                    &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
+&trans  &kp EXCLAMATION         &kp AMPS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PIPE                                    &kp HASH   &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
 &trans  &kp GRAVE               &kp AT    &kp LPAR          &kp RPAR           &kp PERCENT  &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
 &trans  &mt LSHFT SINGLE_QUOTE  &kp SEMI  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
 &trans  &trans                  &trans    &trans            &trans             &trans       &trans    &trans               &trans                                      &trans           &trans
