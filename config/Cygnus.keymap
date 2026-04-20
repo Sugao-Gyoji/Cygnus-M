@@ -199,7 +199,7 @@
 
         td_bracket: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CUSTOM";
+            label = "TD_BRACKET";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
@@ -207,7 +207,7 @@
 
         td_par: tap_dance_par {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CUSTOM";
+            label = "TD_PAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LPAR>, <&kp RPAR>;
@@ -215,7 +215,7 @@
 
         td_brace: tap_dance_brace {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CUSTOM";
+            label = "TD_BRACE";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
