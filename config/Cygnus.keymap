@@ -178,7 +178,7 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hold_s-tap: hold_single_tap {
+        hold_s_tap: hold_single_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_SINGLE_TAP";
             #binding-cells = <2>;
