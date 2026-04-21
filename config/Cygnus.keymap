@@ -178,9 +178,9 @@
             bindings = <&mo>, <&kp>;
         };
 
-        alt_int5: alt_international5 {
+        hold_s-tap: hold_single-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "ALT_INTERNATIONAL5";
+            label = "HOLD_SINGLE-TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
@@ -189,12 +189,12 @@
 
         // Tap-Danceの中で呼び出す
 
-        td_custom: tap_dance_custom {
+        td_alt_int5_4: tap_dance_alt_int5_int4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CUSTOM";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&alt_int5 LALT INT5>, <&kp INT4>;
+            bindings = <&hold_s-tap LALT INT5>, <&kp INT4>;
         };
 
         td_bracket: tap_dance_bracket {
@@ -238,7 +238,7 @@
 &trans  &mt LEFT_WIN Q  &kp W   &kp E   &kp R       &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
 &trans  &mt LCTRL A     &kp S   &kp D   &kp F       &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
 &trans  &mt LSHFT Z     &kp X   &kp C   &kp V       &kp B        &kp DELETE    &kp DOWN_ARROW   &kp N        &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
-&trans  &trans          &trans  &trans  &td_custom  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 ENTER                                                      &trans           &trans
+&trans  &trans          &trans  &trans  &td_alt_int5_4  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 ENTER                                                      &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
