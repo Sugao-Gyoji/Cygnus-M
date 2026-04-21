@@ -178,9 +178,9 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hold_s-tap: hold_single-tap {
+        hold_s-tap: hold_single_tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_SINGLE-TAP";
+            label = "HOLD_SINGLE_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
@@ -194,7 +194,7 @@
             label = "TD_CUSTOM";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&hold_s-tap LALT INT5>, <&kp INT4>;
+            bindings = <&hold_s_tap LALT INT5>, <&kp INT4>;
         };
 
         td_bracket: tap_dance_bracket {
