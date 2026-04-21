@@ -178,7 +178,8 @@
             bindings = <&mo>, <&kp>;
         };
 
-        hold_s_tap: hold_single_tap {
+        // シングルタップと長押しを設定
+        hold_stap: hold_single_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_SINGLE_TAP";
             #binding-cells = <2>;
@@ -186,16 +187,23 @@
             tapping-term-ms = <300>;
             bindings = <&kp>, <&kp>;
         };
-
-        // Tap-Danceの中で呼び出す
-
+        // シングルタップでint5、ダブルタップでint4、長押しで左alt
         td_alt_int5_4: tap_dance_alt_int5_int4 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_CUSTOM";
+            label = "TD_ALT_INT5_INT4";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&hold_s_tap LALT INT5>, <&kp INT4>;
+            bindings = <&hold_stap LALT INT5>, <&kp INT4>;
         };
+        // シングルタップでシングルクォート、ダブルタップでダブルクォート、長押しで左shift
+        td_sft_sq_dq: tap_dance_singlequote_doublequote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHT_SQ_DQ";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&hold_stap LSHIFT SINGLE_QUOTE>, <&kp DOUBLE_QUOTE>;
+        };
+
 
         td_bracket: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
@@ -257,7 +265,7 @@
             bindings = <
 &trans  &td_exc_pipe            &kp AMPS  &kp HASH    &td_bracket  &trans                                      &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
 &trans  &kp GRAVE               &kp AT    &kp DOLLAR  &td_par      &kp PERCENT  &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
-&trans  &mt LSHFT SINGLE_QUOTE  &kp SEMI  &trans      &td_brace    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
+&trans  td_sft_sq_dq            &kp SEMI  &trans      &td_brace    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
 &trans  &trans                  &trans    &trans      &trans       &trans       &trans    &trans               &trans                                      &trans           &trans
             >;
         };
