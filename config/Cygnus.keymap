@@ -220,6 +220,15 @@
             tapping-term-ms = <300>;
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
+
+        td_exc_pipe: tap_exclametion_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_EXC_PIPE";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp EXCLAMATION>, <&kp PIPE>;
+        };
+        
     };
 
     keymap {
