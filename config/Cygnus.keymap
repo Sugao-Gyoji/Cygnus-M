@@ -233,7 +233,7 @@
             bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
         };
 
-        td_exc_pipe: tap_exclametion_hash {
+        td_exc_hash: tap_exclametion_hash {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_EXC_HASHE";
             #binding-cells = <0>;
