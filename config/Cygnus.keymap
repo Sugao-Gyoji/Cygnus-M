@@ -179,6 +179,7 @@
         };
 
         // シングルタップと長押しを設定
+
         hold_stap: hold_single_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_SINGLE_TAP";
@@ -187,7 +188,9 @@
             tapping-term-ms = <300>;
             bindings = <&kp>, <&kp>;
         };
+
         // シングルタップでint5、ダブルタップでint4、長押しで左alt
+
         td_alt_int5_4: tap_dance_alt_int5_int4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ALT_INT5_INT4";
@@ -195,7 +198,9 @@
             tapping-term-ms = <300>;
             bindings = <&hold_stap LALT INT5>, <&kp INT4>;
         };
+
         // シングルタップでシングルクォート、ダブルタップでダブルクォート、長押しで左shift
+
         td_sft_sq_dq: tap_dance_singlequote_doublequote {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHT_SQ_DQ";
@@ -203,7 +208,6 @@
             tapping-term-ms = <300>;
             bindings = <&hold_stap LSHIFT SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
         };
-
 
         td_bracket: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
@@ -243,9 +247,9 @@
 
         default_layer {
             bindings = <
-&trans  &mt LEFT_WIN Q  &kp W   &kp E   &kp R       &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
-&trans  &mt LCTRL A     &kp S   &kp D   &kp F       &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
-&trans  &mt LSHFT Z     &kp X   &kp C   &kp V       &kp B        &kp DELETE    &kp DOWN_ARROW   &kp N        &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
+&trans  &mt LEFT_WIN Q  &kp W   &kp E   &kp R           &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
+&trans  &mt LCTRL A     &kp S   &kp D   &kp F           &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
+&trans  &mt LSHFT Z     &kp X   &kp C   &kp V           &kp B        &kp DELETE    &kp DOWN_ARROW   &kp N        &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
 &trans  &trans          &trans  &trans  &td_alt_int5_4  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 ENTER                                                      &trans           &trans
             >;
 
@@ -263,10 +267,10 @@
 
         NUM {
             bindings = <
-&trans  &td_exc_pipe            &kp AMPS  &kp HASH    &td_bracket  &trans                                      &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
-&trans  &kp GRAVE               &kp AT    &kp DOLLAR  &td_par      &kp PERCENT  &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
-&trans  &td_sft_sq_dq           &kp SEMI  &trans      &td_brace    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
-&trans  &trans                  &trans    &trans      &trans       &trans       &trans    &trans               &trans                                      &trans           &trans
+&trans  &td_exc_pipe   &kp AMPS   &kp HASH    &td_bracket  &trans                                      &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
+&trans  &kp AT         &kp GRAVE  &kp DOLLAR  &td_par      &kp PERCENT  &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
+&trans  &td_sft_sq_dq  &kp SEMI   &trans      &td_brace    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
+&trans  &trans         &trans     &trans      &trans       &trans       &trans    &trans               &trans                                      &trans           &trans
             >;
         };
 
