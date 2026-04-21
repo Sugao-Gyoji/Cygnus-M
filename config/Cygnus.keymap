@@ -228,7 +228,6 @@
             tapping-term-ms = <300>;
             bindings = <&kp EXCLAMATION>, <&kp PIPE>;
         };
-        
     };
 
     keymap {
@@ -256,7 +255,7 @@
 
         NUM {
             bindings = <
-&trans  &kp EXCLAMATION         &kp AMPS  &kp HASH    &td_bracket  &kp PIPE                                    &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
+&trans  &td_exc_pipe            &kp AMPS  &kp HASH    &td_bracket  &trans                                      &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
 &trans  &kp GRAVE               &kp AT    &kp DOLLAR  &td_par      &kp PERCENT  &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
 &trans  &mt LSHFT SINGLE_QUOTE  &kp SEMI  &trans      &td_brace    &kp BSLH     &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
 &trans  &trans                  &trans    &trans      &trans       &trans       &trans    &trans               &trans                                      &trans           &trans
