@@ -8,7 +8,7 @@
 
 #define MOUSE 4
 #define SCROLL 5
-#define NUM 6
+// #define NUM 6
 
 /* mouse-gesture の挙動を補完する設定 */
 
@@ -217,6 +217,7 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
+        /*
         td_par: tap_dance_par {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PAR";
@@ -224,6 +225,7 @@
             tapping-term-ms = <300>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
+        */
 
         td_brace: tap_dance_brace {
             compatible = "zmk,behavior-tap-dance";
@@ -244,6 +246,13 @@
         td_at_amps: tap_at_mps {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_AT_AMPS";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp AT>, <&kp AMPS>;
+        };
+        td_dol_par: tap_dollar_parcent {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_DOL_PAR";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp AT>, <&kp AMPS>;
@@ -276,7 +285,7 @@
         NUM {
             bindings = <
 &trans  &td_exc_hash  &td_sft_sq_dq  &trans      &td_bracket  &kp BACKSLASH                                 &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
-&trans  &td_at_amps   &kp GRAVE      &kp DOLLAR  &td_par      &kp PERCENT    &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
+&trans  &td_at_amps   &kp GRAVE      &td_dol_par  &trans      &trans         &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
 &trans  &trans        &kp SEMI       &trans      &td_brace    &trans         &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
 &trans  &trans        &trans         &trans      &trans       &trans         &trans    &trans               &trans                                      &trans           &trans
             >;
