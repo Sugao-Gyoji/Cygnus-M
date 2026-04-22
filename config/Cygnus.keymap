@@ -217,7 +217,6 @@
             bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
         };
 
-        /*
         td_par: tap_dance_par {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_PAR";
@@ -225,7 +224,6 @@
             tapping-term-ms = <300>;
             bindings = <&kp LPAR>, <&kp RPAR>;
         };
-        */
 
         td_brace: tap_dance_brace {
             compatible = "zmk,behavior-tap-dance";
@@ -285,7 +283,7 @@
         NUM {
             bindings = <
 &trans  &td_exc_hash  &td_sft_sq_dq  &trans      &td_bracket  &kp BACKSLASH                                 &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
-&trans  &td_at_amps   &kp GRAVE      &td_dol_par  &trans      &trans         &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
+&trans  &td_at_amps   &kp GRAVE      &td_dol_par  &td_par      &trans         &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
 &trans  &trans        &kp SEMI       &trans      &td_brace    &trans         &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
 &trans  &trans        &trans         &trans      &trans       &trans         &trans    &trans               &trans                                      &trans           &trans
             >;
