@@ -34,9 +34,10 @@
         #input-processor-cells = <0>; 
         track_remainders;
         bindings = <&kp RIGHT &kp LEFT &kp UP &kp DOWN>;
-        tick = <20>; //デフォルト 40
+        tick = <10>; //デフォルト 40
         tap-ms = <10>;
         wait-ms = <0>;
+        mode = <1>;
     };
 
     /* リスナーを「レイヤー条件付き」に書き換えます */
