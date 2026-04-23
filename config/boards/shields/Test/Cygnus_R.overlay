@@ -34,7 +34,7 @@
         #input-processor-cells = <0>; 
         track_remainders;
         bindings = <&kp RIGHT &kp LEFT &kp UP &kp DOWN>;
-        tick = <10>; //デフォルト 40
+        tick = <15>; //デフォルト 40
         tap-ms = <10>;
         wait-ms = <0>;
         mode = <1>;
