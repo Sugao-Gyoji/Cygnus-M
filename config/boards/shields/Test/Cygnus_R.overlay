@@ -60,8 +60,10 @@
 
 &zip_mouse_gesture {
     status = "okay";
-    stroke-size = <150>;
+    stroke-size = <100>;
     enable-eager-mode;
+    idle-timeout-ms = <100>;
+    gesture-cooldown-ms = <300>;
 
     history_back {
         pattern = <MG_RIGHT>;
