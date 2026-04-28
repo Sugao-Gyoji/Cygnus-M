@@ -256,6 +256,7 @@
             tapping-term-ms = <300>;
             bindings = <&kp AT>, <&kp AMPS>;
         };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -272,9 +273,9 @@
         default_layer {
             bindings = <
 &trans  &mt LEFT_WIN Q  &kp W   &kp E   &kp R           &kp T                                       &kp Y        &kp U                  &kp I      &kp O             &kp P            &trans
-&trans  &hm LCTRL A           &kp S   &kp D   &kp F           &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
+&trans  &hm LCTRL A     &kp S   &kp D   &kp F           &kp G        &mkp MCLK     &kp UP_ARROW     &kp H        &mouse_gesture_kp 0 J  &kp K      &lt 5 L           &mt RCTRL MINUS  &trans
 &trans  &mt LSHFT Z     &kp X   &kp C   &kp V           &kp B        &kp DELETE    &kp DOWN_ARROW   &lt 6 N      &kp M                  &kp COMMA  &dot_arrow 4 DOT  &mt RSHFT SLASH  &trans
-&trans  &trans       &trans  &trans  &td_alt_int5_4  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 ENTER                                                      &trans           &trans
+&trans  &trans          &trans  &trans  &td_alt_int5_4  &lt 1 SPACE  &mkp MB1      &lt 3 BACKSPACE  &lt 2 ENTER                                                      &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
@@ -291,10 +292,10 @@
 
         NUM {
             bindings = <
-&trans  &td_exc_hash  &td_sft_sq_dq   &kp UP_ARROW    &td_dol_par      &kp BACKSLASH                                 &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
-&trans  &td_at_amps   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td_bracket    &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
-&trans  &kp LS(CLCK)  &kp GRAVE       &kp SEMI        &td_par          &td_brace      &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
-&trans  &trans        &trans          &trans          &trans           &trans         &trans    &trans               &trans                                      &trans           &trans
+&trans  &td_exc_hash   &td_sft_sq_dq   &kp UP_ARROW    &td_dol_par      &kp BACKSLASH                                 &kp EQUAL  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL        &trans
+&trans  &td_at_amps    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td_bracket    &trans    &kp INTERNATIONAL_5  &kp KP_N0  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS         &trans
+&trans  &td_sft_sq_dq  &kp GRAVE       &kp SEMI        &td_par          &td_brace      &trans    &trans               &kp KP_N0  &kp KP_N1  &kp KP_N2  &kp KP_N3  &mt RSHFT ASTRK  &trans
+&trans  &trans         &trans          &trans          &trans           &trans         &trans    &trans               &trans                                      &trans           &trans
             >;
         };
 
