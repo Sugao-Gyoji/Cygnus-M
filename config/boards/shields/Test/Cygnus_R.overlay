@@ -52,7 +52,7 @@
         /* 特定のレイヤー（例：5番）にいる時だけプロセッサを追加適用する */
         layer-4 {
             layers = <4>;
-            input-processors = <&zip_mouse_gesture>, <&zip_keybind_keys>, <&zip_xy_discard>;
+            input-processors = <&zip_mouse_gesture>, <&zip_keybind_keys>, <&zip_xy_scaler 1 1000>;
         };
     };
 };
