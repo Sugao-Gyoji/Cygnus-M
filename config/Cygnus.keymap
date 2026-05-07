@@ -179,7 +179,6 @@
         };
 
         // シングルタップでint5、ダブルタップでint4、長押しで左alt
-
         td_alt_int5_4: tap_dance_alt_int5_int4 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ALT_INT5_INT4";
@@ -188,17 +187,7 @@
             bindings = <&hold_stap LALT INT5>, <&kp INT4>;
         };
 
-        // シングルタップでシングルクォート、ダブルタップでダブルクォート、長押しで左shift
-
-        td_sft_sq_dq: tap_dance_singlequote_doublequote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_SHT_SQ_DQ";
-            #binding-cells = <0>;
-            tapping-term-ms = <300>;
-            bindings = <&hold_stap LSHIFT SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
-        };
         // シングルタップでマイナス、ダブルタップでプラス、長押しで右ctrl
-
         td_ctl_min_plus: tap_dance_ctrl_minus_plus {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CTL_MINUS_PLUS";
@@ -208,7 +197,6 @@
         };
 
         // シングルタップでスラッシュ、ダブルタップでアスタリスク、長押しで右shift
-
         td_sft_sl_astrk: tap_dance_shift_slash_asterisk {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHT_SL_ASTRK";
@@ -218,7 +206,6 @@
         };
 
         // シングルタップでドット、ダブルタップで括弧閉じ、長押しで右alt
-
         td_alt_dot_rp: tap_dance_alt_dot_rightpar {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ALT_DOT_RPAR";
