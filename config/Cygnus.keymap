@@ -174,7 +174,7 @@
             label = "HOLD_SINGLE_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp>, <&kp>;
         };
 
@@ -194,7 +194,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CTL_MINUS_PLUS";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&hold_stap RCTRL MINUS>, <&kp PLUS>;
         };
 
@@ -204,7 +204,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHT_SL_ASTRK";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&hold_stap RSHIFT SLASH>, <&kp ASTRK>;
         };
 
@@ -214,7 +214,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ALT_DOT_RPAR";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&hold_stap RALT DOT>, <&kp RPAR>;
         };
 
@@ -282,10 +282,34 @@
             bindings = <&kp AT>, <&kp AMPS>;
         };
 
+        td_semi_clon: tap_semicolon_colon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SEMI_CLON";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SEMICOLON>, <&kp COLON>;
+        };
+
+        td_grv_tld: tap_grave_tilde {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_GRV_TLD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+        };
+
+        td_baks_pipe: tap_backslash_pipe {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_BAKS_PIPE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BACKSLASH>, <&kp PIPE>;
+        };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;    // 500msから200ms程度に下げると快適です
+            tapping-term-ms = <150>;    // 500msから200ms程度に下げると快適です
             quick-tap-ms = <150>;       // 素早い連打を「タップ」として固定
             flavor = "tap-preferred";   // 迷ったら「タップ」を優先する設定
             bindings = <&kp>, <&kp>;
