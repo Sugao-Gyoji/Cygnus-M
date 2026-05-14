@@ -341,9 +341,9 @@
 
         NUM {
             bindings = <
-&trans  &td_exc_hash    &td_sq_dq       &kp UP_ARROW    &td_dol_par      &kp BACKSLASH                    &kp INTERNATIONAL_5  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL         &trans
+&trans  &td_exc_hash    &td_sq_dq       &kp UP_ARROW    &td_dol_par      &td_baks_pipe                    &kp INTERNATIONAL_5  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp EQUAL         &trans
 &trans  &td_at_amps     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td_bracket    &trans    &trans  &kp KP_N0            &kp KP_N4  &kp KP_N5  &kp KP_N6  &td_ctl_min_plus  &trans
-&trans  &mt LSHFT CAPS  &kp GRAVE       &kp SEMI        &td_par          &td_brace      &trans    &trans  &kp KP_N0            &kp KP_N1  &kp KP_N2  &kp KP_N3  &td_sft_sl_astrk  &trans
+&trans  &mt LSHFT CAPS  &td_grv_tld     &td_semi_clon   &td_par          &td_brace      &trans    &trans  &kp KP_N0            &kp KP_N1  &kp KP_N2  &kp KP_N3  &td_sft_sl_astrk  &trans
 &trans  &trans          &trans          &trans          &trans           &trans         &trans    &trans  &trans                                                &trans            &trans
             >;
         };
