@@ -38,6 +38,11 @@
             bindings = <&kp TAB>;
             key-positions = <16 15>;
         };
+
+        combo_shift_click {
+            bindings = <&shift_click>;
+            key-positions = <24 23>;
+        };
     };
 
     macros {
@@ -48,16 +53,18 @@
             label = "TO_LAYER_0";
         };
 
-    shift_click: shift_click {
+        shift_click: shift_click {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             tap-ms = <10>;
             wait-ms = <10>;
-            bindings
-                = <&macro_press &kp LSHFT>
-                , <&macro_tap &mkp MB1>
-                , <&macro_release &kp LSHFT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&mkp MB1>,
+                <&macro_release>,
+                <&kp LSHFT>;
         };
 
         macro_sus: macro_sus {
