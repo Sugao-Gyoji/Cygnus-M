@@ -38,11 +38,6 @@
             bindings = <&kp TAB>;
             key-positions = <16 15>;
         };
-
-        combo_shift_click {
-            bindings = <&shift_click>;
-            key-positions = <24 23>;
-        };
     };
 
     macros {
