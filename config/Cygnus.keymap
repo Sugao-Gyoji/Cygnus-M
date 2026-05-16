@@ -38,11 +38,6 @@
             bindings = <&kp TAB>;
             key-positions = <16 15>;
         };
-
-        BS {
-            bindings = <&kp LC(BACKSPACE)>;
-            key-positions = <13 20>;
-        };
     };
 
     macros {
