@@ -55,10 +55,10 @@
             input-processors = <&zip_mouse_gesture>, <&zip_keybind_keys>, <&zip_xy_scaler 1 1000>;
         };
         scroller {
-            layers = <4>;
+            layers = <5>;
             input-processors = <
                 &zip_xy_to_scroll_mapper
-                &zip_scroll_scaler 5 1
+                &zip_scroll_scaler 3 1
             >;
         };
     };
