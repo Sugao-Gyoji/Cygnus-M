@@ -341,7 +341,7 @@
 &trans  &trans          &trans  &trans  &mt LALT TAB  &lt 1 SPACE  &mkp MB1        &lt 3 BACKSPACE  &lt 2 ENTER                                                    &trans            &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
+            sensor-bindings = <&ROTATE SCRL_DOWN SCRL_UP>;
         };
 
         FUNCTION-ARROW {
@@ -351,6 +351,8 @@
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LC(C)   &kp LC(X)    &trans    &trans      &kp C_VOLUME_DOWN  &kp K_MUTE      &kp C_VOLUME_UP  &trans         &trans
 &trans  &trans  &trans   &trans   &trans   &trans      &trans       &kp INT5  &kp INT4                                                        &trans         &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NUM {
