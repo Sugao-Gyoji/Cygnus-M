@@ -293,7 +293,7 @@
             label = "TD_DOL_PAR";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp AT>, <&kp AMPS>;
+            bindings =  <&kp DOLLAR>, <&kp PERCENT>;
         };
 
         td_semi_clon: tap_semicolon_colon {
